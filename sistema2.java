@@ -5,8 +5,6 @@ public static void main(String[] args) {
     String nomeAluno;
     double[] notas = new double[5];
     double media;
-    boolean aprovado = false;
-
     System.out.print("Digite o nome do aluno: ");
     nomeAluno = input.nextLine();
 
@@ -18,7 +16,6 @@ public static void main(String[] args) {
     media = (notas[0] + notas[1] + notas[2] + notas[3] + notas[4]) / 5;
 
     if (media >= 60) {
-        aprovado = true; // atualiza para verdadeiro
         System.out.println(nomeAluno + " foi aprovado(a) com média " + media);
     } else if (media < 40) {
         System.out.println(nomeAluno + " foi reprovado(a) com média " + media);
